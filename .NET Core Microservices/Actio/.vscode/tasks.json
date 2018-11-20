@@ -5,10 +5,6 @@
             "label": "build",
             "command": "dotnet",
             "type": "process",
-            "args": [
-                "build",
-                "${workspaceFolder}/src/Actio.Api/Actio.Api.csproj"
-            ],
             "problemMatcher": "$msCompile"
         }
     ]

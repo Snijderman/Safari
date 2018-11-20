@@ -7,14 +7,12 @@ namespace Actio.Common.Events
       protected ActivityCreated()
       { }
 
-      public ActivityCreated(Guid userId, string category, string name, string description, DateTime createdAt)
+      public ActivityCreated(Guid id, Guid userId, string category, string name)
       {
+         this.Id = id;
          this.UserId = userId;
          this.Category = category;
          this.Name = name;
-         this.Description = description;
-         this.CreatedAt = createdAt;
-
       }
 
       public Guid Id { get; }
